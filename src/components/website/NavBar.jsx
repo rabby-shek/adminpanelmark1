@@ -1,42 +1,84 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
+  const [activeSection, setActiveSection] = useState("");
+  const location = useLocation();
+
   const navItems = [
     {
       id: 1,
       title: "Home",
-      path: "/",
+      path: "#home",
     },
     {
       id: 2,
       title: "About",
-      path: "/about",
+      path: "#about",
     },
     {
       id: 3,
       title: "Features",
-      path: "/features",
+      path: "#features",
     },
     {
       id: 4,
       title: "Pricing",
-      path: "/pricing",
+      path: "#pricing",
     },
     {
       id: 5,
+      title: "Contact",
+      path: "#contact",
+    },
+    {
+      id: 6,
       title: "Login",
       path: "/login",
     },
     {
-      id: 6,
+      id: 7,
       title: "Sign Up",
       path: "/sign-up",
     },
   ];
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.slice(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+      setActiveSection(location.hash.slice(1));
+    } else {
+      setActiveSection("");
+    }
+  }, [location]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = navItems
+        .map((item) => (item.path.startsWith("#") ? item.path.slice(1) : null))
+        .filter(Boolean);
+      let currentSection = "";
+
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element && window.scrollY >= element.offsetTop - 50) {
+          currentSection = section;
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg navbar-light shadow-sm position-fixed w-100 bg-light">
+      <div className="container">
         <Link className="navbar-brand" to="/">
           Mark-1
         </Link>
@@ -51,12 +93,17 @@ const NavBar = () => {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse flex justify-content-end align-items-end" id="navbarScroll">
-          <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+        <div className="collapse navbar-collapse" id="navbarScroll">
+          <ul className="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
             {navItems.map((item) => {
+              const isActive = item.path === `#${activeSection}`;
               return (
                 <li key={item.id} className="nav-item">
-                  <Link className="nav-link" aria-current="page" to={item.path}>
+                  <Link
+                    className={`nav-link ${isActive ? "active" : ""}`}
+                    aria-current="page"
+                    to={item.path}
+                  >
                     {item.title}
                   </Link>
                 </li>

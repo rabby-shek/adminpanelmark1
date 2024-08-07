@@ -3,9 +3,26 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
+/* website header styles */
+.navbar{
+  z-index: 10;
+}
+.nav-link{
+  font-weight: bold;
+}
+.nav-link::first-letter {
+  transition: all 0.3s ease; /* Add transition for smooth effect */
+}
 
-/* facebook icon styles */
+.nav-link:hover::first-letter {
+  color: #399918;
+  background-color: #00000034;
+}
+/* footer icon styles */
 .footer-icon-container{
   width: 40px;
   height: 40px;

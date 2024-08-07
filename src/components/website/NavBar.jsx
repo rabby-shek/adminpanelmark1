@@ -34,12 +34,12 @@ const NavBar = () => {
     {
       id: 6,
       title: "Login",
-      path: "/login",
+      path: "/auth/login",
     },
     {
       id: 7,
       title: "Sign Up",
-      path: "/sign-up",
+      path: "/auth/sign-up",
     },
   ];
 

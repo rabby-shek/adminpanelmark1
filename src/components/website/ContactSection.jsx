@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactSection = () => {
   return (
-    <section className="bg-light py-3 py-md-5" id="contact">
+    <section className="container-fluid bg-light py-3 py-md-5" id="contact">
       <div className="container">
         <div className="row justify-content-md-center">
           <div className="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">

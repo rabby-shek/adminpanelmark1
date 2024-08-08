@@ -1,7 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   return (
     <section className="container-fluid bg-light py-3 py-md-5">
       <div className="container">
@@ -17,7 +18,6 @@ const Login = () => {
                       width={175}
                       height={57}
                     /> */}
-
                     Mark 1
                   </NavLink>
                 </div>
@@ -87,6 +87,7 @@ const Login = () => {
                         <button
                           className="btn btn-primary btn-lg"
                           type="submit"
+                          onClick={() => navigate("/app/dashboard")}
                         >
                           Login
                         </button>

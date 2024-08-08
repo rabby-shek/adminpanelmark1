@@ -8,6 +8,7 @@ import Login from "../pages/auth/login/Login";
 import Register from "../pages/auth/register/Register";
 import ForgotPassword from "../pages/auth/ForgotPassword";
 import Dashboard from "../pages/app/Dashboard";
+import Tables from "../pages/app/Tables";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "/app/dashboard",
         element: <Dashboard />
+      },
+      {
+        path: "/app/tables",
+        element: <Tables />
       }
     ]
   },

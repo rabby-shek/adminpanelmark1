@@ -11,6 +11,10 @@ html {
 .navbar {
   z-index: 9999;
 }
+.navbar-brand img{
+  width: 80px;
+  height: auto;
+}
 .nav-link {
   font-weight: bold;
 }

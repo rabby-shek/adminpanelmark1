@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-
+import logo from "../../assets/img/Mark-1-removebg-preview.png"
 const NavBar = () => {
   const [activeSection, setActiveSection] = useState("");
   const location = useLocation();
@@ -80,7 +80,7 @@ const NavBar = () => {
     <nav className="navbar navbar-expand-lg navbar-light shadow-sm position-fixed w-100 bg-light">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          Mark-1
+          <img src={logo} alt="logo" />
         </Link>
         <button
           className="navbar-toggler"

@@ -37,7 +37,7 @@ const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <footer className="bg-body-tertiary text-center">
+    <footer className=" text-center">
       {/* Grid container */}
       <div className="container p-4 pb-0">
         {/* Section: Social media */}

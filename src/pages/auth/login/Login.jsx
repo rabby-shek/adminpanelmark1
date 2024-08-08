@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-
+import logo from "../../../assets/img/Mark-1-removebg-preview.png";
 const Login = () => {
   const navigate = useNavigate();
   return (
@@ -12,13 +12,12 @@ const Login = () => {
               <div className="card-body p-3 p-md-4 p-xl-5">
                 <div className="text-center mb-3">
                   <NavLink to="/">
-                    {/* <img
-                      src="./assets/img/bsb-logo.svg"
-                      alt="BootstrapBrain Logo"
+                    <img
+                      src={logo}
+                      alt="Logo"
                       width={175}
                       height={57}
-                    /> */}
-                    Mark 1
+                    />
                   </NavLink>
                 </div>
                 <h2 className="fs-6 fw-normal text-center text-secondary mb-4">

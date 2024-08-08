@@ -8,6 +8,7 @@ import { FaBell } from "react-icons/fa";
 import { MdDashboardCustomize } from "react-icons/md";
 import { NavLink, useNavigate } from 'react-router-dom';
 import { CiViewTable } from "react-icons/ci";
+import logo from "../../assets/img/Mark-1-removebg-preview.png"
 const Header = () => {
     const navigate = useNavigate();
   return (
@@ -66,13 +67,12 @@ const Header = () => {
               </button>
               {/* <!-- Brand --> */}
               <a className="navbar-brand" href="#">
-                {/* <img
-                  src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+                <img
+                  src={logo}
                   height="25"
                   alt="MDB Logo"
                   loading="lazy"
-                /> */}
-                <h5>Mark - 1</h5>
+                />
               </a>
             </div>
             <div className="ms-auto d-flex align-items-center gap-4">

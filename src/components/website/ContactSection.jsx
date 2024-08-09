@@ -6,8 +6,10 @@ const ContactSection = () => {
       <div className="container">
         <div className="row justify-content-md-center">
           <div className="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-            <h2 className="mb-4 display-5 text-center">Contact</h2>
-            <p className="text-secondary mb-5 text-center">
+            <h2 className="mb-4 display-5 text-center" data-aos="fade-down">
+              Contact
+            </h2>
+            <p className="text-secondary mb-5 text-center" data-aos="fade-down">
               The best way to contact us is to use our contact form below.
               Please fill out all of the required fields and we will get back to
               you as soon as possible.
@@ -102,7 +104,7 @@ const ContactSection = () => {
                     />
                   </div>
                   <div className="col-12">
-                    <div className="d-grid">
+                    <div className="d-grid" data-aos="fade-down">
                       <button className="btn btn-primary btn-lg" type="submit">
                         Submit
                       </button>

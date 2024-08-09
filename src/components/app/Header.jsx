@@ -12,14 +12,16 @@ import logo from "../../assets/img/Mark-1-removebg-preview.png";
 const Header = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const navigate = useNavigate();
-  const handleShowSidebar = () => setShowSidebar(!showSidebar);   
+  const handleShowSidebar = () => setShowSidebar(!showSidebar);
 
   return (
     <header>
       {/* Sidebar */}
       <nav
         id="sidebarMenu"
-        className={`d-lg-block sidebar navbar-light ${showSidebar ? "show-sidebar": ""}`}
+        className={`d-lg-block sidebar navbar-light ${
+          showSidebar ? "show-sidebar" : ""
+        }`}
       >
         <div className="position-sticky">
           <div className="list-group list-group-flush mx-3 mt-4">

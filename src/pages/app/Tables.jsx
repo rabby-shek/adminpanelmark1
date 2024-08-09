@@ -2,7 +2,7 @@ import React from "react";
 import { FaTimes } from "react-icons/fa";
 const Tables = () => {
   return (
-    <section>
+    <section className="container-fluid py-2">
       <div className=" card table-responsive">
         {/* table 1 */}
         <table className="table table-borderless bsb-table-xl text-nowrap align-middle m-0">

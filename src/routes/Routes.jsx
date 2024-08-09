@@ -9,7 +9,7 @@ import Register from "../pages/auth/register/Register";
 import ForgotPassword from "../pages/auth/ForgotPassword";
 import Dashboard from "../pages/app/Dashboard";
 import Tables from "../pages/app/Tables";
-
+import Profile from "../pages/app/Profile";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -50,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "/app/tables",
         element: <Tables />
+      },
+      {
+        path: "/app/profile",
+        element: <Profile />
       }
     ]
   },

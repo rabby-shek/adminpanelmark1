@@ -102,12 +102,20 @@ const Header = () => {
               </button>
               <ul className="dropdown-menu">
                 <li>
-                  <button className="dropdown-item" type="button">
+                  <button
+                    className="dropdown-item"
+                    type="button"
+                    onClick={() => navigate("/app/profile")}
+                  >
                     <ImProfile /> Profile
                   </button>
                 </li>
                 <li>
-                  <button className="dropdown-item" type="button">
+                  <button
+                    className="dropdown-item"
+                    type="button"
+                    onClick={() => navigate("/app/settings")}
+                  >
                     <IoSettings /> Settings
                   </button>
                 </li>

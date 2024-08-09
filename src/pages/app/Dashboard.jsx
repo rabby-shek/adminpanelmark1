@@ -1,7 +1,7 @@
 import React from "react";
 const Dashboard = () => {
   return (
-    <section>
+    <section className="container-fluid py-2">
       <div className="row">
         <div className="col-md-4 col-sm-6">
           <div class="card widget-card border-light shadow-sm">

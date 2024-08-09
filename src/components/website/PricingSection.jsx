@@ -6,10 +6,10 @@ const PricingSection = () => {
       <div className="container">
         <div className="row justify-content-md-center">
           <div className="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-            <h3 className="fs-6 text-secondary mb-2 text-uppercase text-center">
+            <h3 className="fs-6 text-secondary mb-2 text-uppercase text-center" data-aos="fade-down">
               Our Pricing
             </h3>
-            <h2 className="display-5 mb-4 mb-md-5 text-center">
+            <h2 className="display-5 mb-4 mb-md-5 text-center" data-aos="fade-down">
               We offer great pricing plans for everyone.
             </h2>
             <hr className="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
@@ -18,7 +18,7 @@ const PricingSection = () => {
       </div>
       <div className="container">
         <div className="row gy-5 gy-lg-0 gx-xl-5">
-          <div className="col-12 col-lg-4">
+          <div className="col-12 col-lg-4" data-aos="flip-right">
             <div className="card border-0 border-bottom border-primary shadow-sm">
               <div className="card-body p-4 p-xxl-5">
                 <h2 className="h4 mb-2">Starter</h2>
@@ -125,7 +125,7 @@ const PricingSection = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-4">
+          <div className="col-12 col-lg-4"  data-aos="flip-down">
             <div className="card border-0 border-bottom border-primary shadow-lg pt-md-4 pb-md-4 bsb-pricing-popular">
               <div className="card-body p-4 p-xxl-5">
                 <h2 className="h4 mb-2">Pro</h2>
@@ -232,7 +232,7 @@ const PricingSection = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-4">
+          <div className="col-12 col-lg-4"  data-aos="flip-left">
             <div className="card border-0 border-bottom border-primary shadow-sm">
               <div className="card-body p-4 p-xxl-5">
                 <h2 className="h4 mb-2">Business</h2>

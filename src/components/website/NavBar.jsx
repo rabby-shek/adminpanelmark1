@@ -77,7 +77,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light shadow-sm position-fixed w-100 bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light shadow-sm">
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="logo" />

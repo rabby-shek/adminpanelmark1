@@ -6,7 +6,7 @@ const AppLayout = () => {
     <>
       <Header />
       <main style={{ marginTop: 58 }}>
-        <div className="container pt-3" />
+        <div className="container pt-4" />
         <div className="container-fluid">
           <Outlet />
         </div>

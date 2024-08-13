@@ -12,11 +12,11 @@ import Tables from "../pages/app/Tables";
 import Profile from "../pages/app/Profile";
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/adminpanelmark1",
     element: <WebsiteLayout />,
     children: [
       {
-        path: "/",
+        path: "/adminpanelmark1",
         element: <Home />,
       },
     ],

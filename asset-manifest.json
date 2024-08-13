@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/adminpanelmark1/static/css/main.4faf2c1d.css",
-    "main.js": "/adminpanelmark1/static/js/main.a870893b.js",
+    "main.js": "/adminpanelmark1/static/js/main.955ec7bc.js",
     "static/media/Mark-1-removebg-preview.png": "/adminpanelmark1/static/media/Mark-1-removebg-preview.ebc5e332ec13308126e7.png",
     "index.html": "/adminpanelmark1/index.html",
     "main.4faf2c1d.css.map": "/adminpanelmark1/static/css/main.4faf2c1d.css.map",
-    "main.a870893b.js.map": "/adminpanelmark1/static/js/main.a870893b.js.map"
+    "main.955ec7bc.js.map": "/adminpanelmark1/static/js/main.955ec7bc.js.map"
   },
   "entrypoints": [
     "static/css/main.4faf2c1d.css",
-    "static/js/main.a870893b.js"
+    "static/js/main.955ec7bc.js"
   ]
 }
